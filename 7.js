@@ -1,5 +1,5 @@
 // Sieve of Eratosthenes
-var Sieve = new Array(1000001);
+let Sieve = new Array(1000001);
 Sieve.fill(true);
 Sieve[1] = false;
 
@@ -11,7 +11,7 @@ for (i = 2; i <= 1000000; i++) {
     }
 }
 
-var count = 1;
+let count = 1;
 
 for (i = 2; i <= 1000000; i++) {
     if (!Sieve[i])
