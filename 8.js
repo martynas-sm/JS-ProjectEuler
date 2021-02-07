@@ -3,11 +3,9 @@ const Number = "7316717653133062491922511967442657474235534919493496983520312774
 let digits = Number.split("");
 let best = 0;
 
-for(i = 0; i + 12 < digits.length; i++)
-{
+for (i = 0; i + 12 < digits.length; i++) {
     let curr = 1;
-    for(j = 0; j < 13; j++)
-    {
+    for (j = 0; j < 13; j++) {
         curr *= digits[i + j];
         best = Math.max(best, curr);
     }
