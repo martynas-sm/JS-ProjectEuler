@@ -10,7 +10,6 @@ function Divisors(num) {
     return sum;
 }
 
-let S = new Set;
 let sum = 0;
 for(let a = 220; a < 10000; a++)
 {
