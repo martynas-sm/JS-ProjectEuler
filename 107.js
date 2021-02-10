@@ -34,7 +34,7 @@ let availableEdges = new Array;
 availableEdges = Adj[0];
 visited[0] = true;
 
-// O(n*n*log(n)) n = 40 so its fine
+// O(n^2*n^2*log(n^2)) n = 40 so its fine
 for(let i = 0; i < n-1; i++)
 {
     availableEdges.sort((a, b) => (a.weight < b.weight) ? 1 : -1); // PriorityQueue or ordered set is better
